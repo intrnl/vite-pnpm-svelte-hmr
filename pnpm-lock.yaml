@@ -1,7 +1,7 @@
 devDependencies:
   svelte: 3.23.2
   vite: 1.0.0-beta.2
-  vite-plugin-svelte: 2.0.0-experimental.2_svelte@3.23.2+vite@1.0.0-beta.2
+  vite-plugin-svelte: 2.0.0-experimental.5_svelte@3.23.2+vite@1.0.0-beta.2
 lockfileVersion: 5.1
 packages:
   /@babel/code-frame/7.10.3:
@@ -37,6 +37,14 @@ packages:
     dev: true
     resolution:
       integrity: sha512-nZxaJhBXBQ8HVoIcGsf9qWep3Oh3jCENK54V4mRF7qaJabVsAYdbTtmSD8WmAp1R6ytPiu5apMwSXyxB1WlaBA==
+  /@intrnl/svelte-hmr/0.9.0-test.1_svelte@3.23.2:
+    dependencies:
+      svelte: 3.23.2
+    dev: true
+    peerDependencies:
+      svelte: '>=3.19.0'
+    resolution:
+      integrity: sha512-aPel/19vZJHrzoZPsJQMQM2wcaLX8wSO39AICQMhxUZShOX0MAlcPpYJEfvQM9D5d33haziE35TEBHG9koN4HQ==
   /@nodelib/fs.scandir/2.1.3:
     dependencies:
       '@nodelib/fs.stat': 2.0.3
@@ -2017,14 +2025,6 @@ packages:
       node: '>=8'
     resolution:
       integrity: sha512-oRSIpR8pxT1Wr2FquTNnGet79b3BWljqOuoW/h4oBhxJ/HUbX5nX6JSruTkvXDCFMwDPvsaTTbvMLKZWSy0R5g==
-  /svelte-hmr/0.9.0_svelte@3.23.2:
-    dependencies:
-      svelte: 3.23.2
-    dev: true
-    peerDependencies:
-      svelte: '>=3.19.0'
-    resolution:
-      integrity: sha512-spsA604P1/DIiFRyaR4H4hYMx8RFHNkyYN9ogqdu38bJGO/ezLwH/dqnE7E7PHDzDOTFyccvpa+oVUICKXHqTA==
   /svelte/3.23.2:
     dev: true
     engines:
@@ -2134,18 +2134,18 @@ packages:
       node: '>= 0.8'
     resolution:
       integrity: sha1-IpnwLG3tMNSllhsLn3RSShj2NPw=
-  /vite-plugin-svelte/2.0.0-experimental.2_svelte@3.23.2+vite@1.0.0-beta.2:
+  /vite-plugin-svelte/2.0.0-experimental.5_svelte@3.23.2+vite@1.0.0-beta.2:
     dependencies:
+      '@intrnl/svelte-hmr': 0.9.0-test.1_svelte@3.23.2
       rollup-plugin-svelte: 5.2.3_svelte@3.23.2
       svelte: 3.23.2
-      svelte-hmr: 0.9.0_svelte@3.23.2
       vite: 1.0.0-beta.2
     dev: true
     peerDependencies:
       svelte: ^3.0.0
       vite: '>=0.20.8 <2.0.0'
     resolution:
-      integrity: sha512-3jrrYoWBnoItUT8Vv2+LAGEsvuLsdLFNJZ0iiWZ6TwMSdAgz6btHmHO1tYKzzWGFzmRpLRW7ROr4jPp6czQCeg==
+      integrity: sha512-ErhX5O+7RkXGSdwnVqKWlJhMEYhkxbXZPg0D4+vJVFEImnKdlvJ7LEvG76MgP7doY5S4ty/SCJ6ll4hBYfHv3Q==
   /vite/1.0.0-beta.2:
     dependencies:
       '@babel/parser': 7.10.3
@@ -2256,4 +2256,4 @@ packages:
 specifiers:
   svelte: ^3.23.2
   vite: ^1.0.0-beta.1
-  vite-plugin-svelte: ^2.0.0-experimental.2
+  vite-plugin-svelte: ^2.0.0-experimental.5
